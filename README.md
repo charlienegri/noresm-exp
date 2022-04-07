@@ -32,16 +32,12 @@ A fully-rendered HTML version of the book will be built in `noresm_exp_book/_bui
 the GitHub actions workflow automatically renders and pushes the rendered output to the `gh-pages` branch of the repo and hosts it on GitHub Pages when a push or pull request is made to the main branch
 
 
-## Credits
+## Credits and licence
 
-This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
-
-## Licence
-
+This project is created using the open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).  
 
 This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-.
 
 [![CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
