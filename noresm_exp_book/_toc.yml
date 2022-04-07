@@ -1,5 +1,5 @@
 format: jb-book
-root: content/intro
+root: intro
 options:
   numbered: false
   expand_sections: true
