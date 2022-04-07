@@ -1,4 +1,4 @@
-# Data storage
+## Data storage
 All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/
 
 
@@ -20,9 +20,10 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ```
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/piControl/r1i1p1f1/
 ```
-# Simulation specifics
 
-## N1850frc2_f09_tn14_20191001 (1200 - 1299)
+## Simulation specifics
+
+### N1850frc2_f09_tn14_20191001 (1200 - 1299)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -38,7 +39,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191001|
 | Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850frc2_f09_tn14_20191001/ |
 
-## N1850frc2_f09_tn14_20191012 (1300 - 1450)
+### N1850frc2_f09_tn14_20191012 (1300 - 1450)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -54,7 +55,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850frc2_f09_tn14_20191012|
 | Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850frc2_f09_tn14_20191012/ |
 
-## N1850frc2_f09_tn14_20191113 (1450 - 1699)
+### N1850frc2_f09_tn14_20191113 (1450 - 1699)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -71,7 +72,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850frc2_f09_tn14_20191113/ |
 
 
-# Time series of NorESM2-MM pre-industrial control experiments
+## Time series of NorESM2-MM pre-industrial control experiments
 
 <figure>
   <img src="images/piCmm.png" alt="NorESM2-MM piControl simulations<" style="width:100%">

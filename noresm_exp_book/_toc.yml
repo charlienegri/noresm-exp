@@ -2,6 +2,7 @@ format: jb-book
 root: content/intro
 options:
   numbered: false
+  expand_sections: true
 chapters:
 # NorESM2-MM DECK experiments
 - file: noresm2_deck/noresm2_mm_deck
