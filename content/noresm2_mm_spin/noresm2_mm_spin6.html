@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data storage &#8212; NorESM Experiments</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">NorESM Experiments</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Heading: content/intro.rst
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/NorESMhub/noresm-exp">
+   Github repository
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/noresm2_mm_spin/noresm2_mm_spin6.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/NorESMhub/noresm-exp/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/NorESMhub/noresm-exp//issues/new?title=Issue%20on%20page%20%2Fcontent/noresm2_mm_spin/noresm2_mm_spin6.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Data storage
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#path-to-case-directory">
+   Path to case directory
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#path-to-diagnostics">
+   Path to diagnostics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-simulation">
+   Summary of simulation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simulation-specifics">
+   Simulation specifics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#node-allocation">
+   Node allocation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-modifications-sourcemods">
+   Code modifications (SourceMods)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modification-of-fall-speed-parameters-for-droplets">
+     Modification of fall speed parameters for droplets
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ice-cloud-parameterisation-changes">
+     Ice cloud parameterisation changes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#increase-in-dms-emissions-high-latitudes">
+     Increase in DMS emissions @ high latitudes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-ihamocc-modifications">
+     Other iHAMOCC modifications
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#long-wave-aod-fix">
+     Long wave AOD fix
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#user-name-lists">
+   User name lists
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-emission-files-files-in-cam6-nor-frc2">
+     New emission files files in CAM6-Nor (FRC2)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gamma">
+     gamma
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iceopt">
+     iceopt
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-micom">
+     user_nl_micom
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-cam">
+     user_nl_cam
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-clm">
+     user_nl_clm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#time-series-of-spinup">
+   Time series of spinup
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data storage</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Data storage
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#path-to-case-directory">
+   Path to case directory
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#path-to-diagnostics">
+   Path to diagnostics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-simulation">
+   Summary of simulation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#simulation-specifics">
+   Simulation specifics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#node-allocation">
+   Node allocation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-modifications-sourcemods">
+   Code modifications (SourceMods)
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modification-of-fall-speed-parameters-for-droplets">
+     Modification of fall speed parameters for droplets
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ice-cloud-parameterisation-changes">
+     Ice cloud parameterisation changes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#increase-in-dms-emissions-high-latitudes">
+     Increase in DMS emissions @ high latitudes
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-ihamocc-modifications">
+     Other iHAMOCC modifications
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#long-wave-aod-fix">
+     Long wave AOD fix
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#user-name-lists">
+   User name lists
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-emission-files-files-in-cam6-nor-frc2">
+     New emission files files in CAM6-Nor (FRC2)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gamma">
+     gamma
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iceopt">
+     iceopt
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-micom">
+     user_nl_micom
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-cam">
+     user_nl_cam
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-nl-clm">
+     user_nl_clm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#time-series-of-spinup">
+   Time series of spinup
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-storage">
+<h1>Data storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h1>
+<p>The data is stored on NIRD &#64; sigma2</p>
+<p>/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_20190417</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="path-to-case-directory">
+<h1>Path to case directory<a class="headerlink" href="#path-to-case-directory" title="Permalink to this headline">¶</a></h1>
+<p>on Fram &#64; sigma2</p>
+<p>/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850OCBDRDDMS_f09_tn14_20190417/</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="path-to-diagnostics">
+<h1>Path to diagnostics<a class="headerlink" href="#path-to-diagnostics" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f09_tn14_20190417/">http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f09_tn14_20190417/</a></p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="summary-of-simulation">
+<h1>Summary of simulation<a class="headerlink" href="#summary-of-simulation" title="Permalink to this headline">¶</a></h1>
+<p>New in this simulation:</p>
+<ul class="simple">
+<li><p>The long wave aerosol optical depth (AOD) bug fixer pmxsub.F90 was replaced by optinterpol.F90</p></li>
+<li><p>Removed the modification to fall speed parameters for droplets</p></li>
+</ul>
+<p>Continued to use:</p>
+<ul class="simple">
+<li><p>the updated emission files for CAM6-Nor (often referred to as FRC2)</p></li>
+<li><p>the increase in DMS emissions &#64; high latitudes in order to reduce the net radiation imbalance &#64;TOM (top of model)</p></li>
+<li><p>the increase in width of Strait of Gibraltar  from 15 km to 30 km</p></li>
+<li><p>the modifications to the parameterisation of ice clouds (iceopt=5 and cldfrc2m.F90)</p></li>
+<li><p>the modifications to the parameters bkopal, rcalc and ropal in iHAMOCC included as SourceMod</p></li>
+<li><p>the modifications to the convection code included as SourceMod: zm_conv.F90: “zmst” modifications.</p></li>
+<li><p>aerotab_table_dir = ‘/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17’</p></li>
+<li><p>the namelist changes compared to repository as in N1850OCBDRDDMS_f09_tn14_20190411</p></li>
+</ul>
+<p>Excluded:</p>
+<ul class="simple">
+<li><p>Modification of fall speed parameters for droplets. Included in SourceMod/src.cam/micro_mg_utils.F90 in N1850OCBDRDDMS_f09_tn14_20190411</p></li>
+<li><p>AOD fix in in SourceMod/src.cam/ pmxsub.F90</p></li>
+</ul>
+<p>For all SourceMods and user name list specifics, see bottom of this page</p>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="simulation-specifics">
+<h1>Simulation specifics<a class="headerlink" href="#simulation-specifics" title="Permalink to this headline">¶</a></h1>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="text-align:left head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CESM parent</p></td>
+<td class="text-align:left"><p>CESM2.0.0</p></td>
+</tr>
+<tr class="row-odd"><td><p>Parent</p></td>
+<td class="text-align:left"><p>N1850OCBDRDDMS_f09_tn14_20190411</p></td>
+</tr>
+<tr class="row-even"><td><p>Run type</p></td>
+<td class="text-align:left"><p>branch</p></td>
+</tr>
+<tr class="row-odd"><td><p>Branch time from parent</p></td>
+<td class="text-align:left"><p>01-01-0301</p></td>
+</tr>
+<tr class="row-even"><td><p>Simulated years</p></td>
+<td class="text-align:left"><p>01-01-0301 - 31-12-0360</p></td>
+</tr>
+<tr class="row-odd"><td><p>Compset</p></td>
+<td class="text-align:left"><p>1850_CAM60%PTAERO_CLM50%BGC-CROP_CICE_MICOM%ECO_MOSART_SGLC_SWAV_BGC%BDRDDMS</p></td>
+</tr>
+<tr class="row-even"><td><p>Git branch</p></td>
+<td class="text-align:left"><p>featureCESM2-OsloDevelopment</p></td>
+</tr>
+<tr class="row-odd"><td><p>Git commit</p></td>
+<td class="text-align:left"><p>46a9911</p></td>
+</tr>
+<tr class="row-even"><td><p>Resolution</p></td>
+<td class="text-align:left"><p>f09_tn14</p></td>
+</tr>
+<tr class="row-odd"><td><p>Machine</p></td>
+<td class="text-align:left"><p>Fram</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="node-allocation">
+<h1>Node allocation<a class="headerlink" href="#node-allocation" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="o">&lt;</span><span class="n">entry</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;NTASKS&quot;</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span><span class="n">integer</span><span class="o">&lt;/</span><span class="nb">type</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">values</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;ATM&quot;</span><span class="o">&gt;</span><span class="mi">1536</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;CPL&quot;</span><span class="o">&gt;</span><span class="mi">1536</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;OCN&quot;</span><span class="o">&gt;</span><span class="mi">91</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;WAV&quot;</span><span class="o">&gt;</span><span class="mi">300</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;GLC&quot;</span><span class="o">&gt;</span><span class="mi">1536</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;ICE&quot;</span><span class="o">&gt;</span><span class="mi">736</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;ROF&quot;</span><span class="o">&gt;</span><span class="mi">20</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;LND&quot;</span><span class="o">&gt;</span><span class="mi">780</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">value</span> <span class="n">compclass</span><span class="o">=</span><span class="s2">&quot;ESP&quot;</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">value</span><span class="o">&gt;</span>
+      <span class="o">&lt;/</span><span class="n">values</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="n">desc</span><span class="o">&gt;</span><span class="n">number</span> <span class="n">of</span> <span class="n">tasks</span> <span class="k">for</span> <span class="n">each</span> <span class="n">component</span><span class="o">&lt;/</span><span class="n">desc</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">entry</span><span class="o">&gt;</span>
+
+
+</pre></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="code-modifications-sourcemods">
+<h1>Code modifications (SourceMods)<a class="headerlink" href="#code-modifications-sourcemods" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="modification-of-fall-speed-parameters-for-droplets">
+<h2>Modification of fall speed parameters for droplets<a class="headerlink" href="#modification-of-fall-speed-parameters-for-droplets" title="Permalink to this headline">¶</a></h2>
+<p>In components/cam/src/physics/cam/micro_mg_utils.F90</p>
+<p>Line 138 from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">real</span><span class="p">(</span><span class="n">r8</span><span class="p">),</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">public</span> <span class="p">::</span> <span class="n">ai</span> <span class="o">=</span> <span class="mf">700.</span><span class="n">_r8</span> 
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">real</span><span class="p">(</span><span class="n">r8</span><span class="p">),</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">public</span> <span class="p">::</span> <span class="n">ai</span> <span class="o">=</span> <span class="mf">750.</span><span class="n">_r8</span> 
+</pre></div>
+</div>
+</div>
+<div class="section" id="ice-cloud-parameterisation-changes">
+<h2>Ice cloud parameterisation changes<a class="headerlink" href="#ice-cloud-parameterisation-changes" title="Permalink to this headline">¶</a></h2>
+<p>in components/cam/src/physics/cam/cldfrc2m.F90</p>
+<p>Line 47 and 48 from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>real(r8),  parameter :: qist_min     = 1.e-7_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ]
+real(r8),  parameter :: qist_max     = 5.e-3_r8      ! Maximum in-stratus ice IWC constraint [ kg/kg ]
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>real(r8),  parameter :: qist_min     = 5.e-6_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ] 
+real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IWC constraint [ kg/kg ]
+</pre></div>
+</div>
+<p>Line 883 and Line 1137 from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aist</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mf">0.</span><span class="n">_r8</span><span class="p">,</span><span class="nb">min</span><span class="p">(</span><span class="mf">1.</span><span class="n">_r8</span><span class="p">,</span><span class="n">qi</span><span class="o">/</span><span class="n">qist_min</span><span class="p">))</span> 
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aist</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mf">0.</span><span class="n">_r8</span><span class="p">,</span><span class="nb">min</span><span class="p">(</span><span class="mf">1.</span><span class="n">_r8</span><span class="p">,</span><span class="n">sqrt</span><span class="p">(</span><span class="n">aist</span><span class="o">*</span><span class="n">qi</span><span class="o">/</span><span class="n">qist_min</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="increase-in-dms-emissions-high-latitudes">
+<h2>Increase in DMS emissions &#64; high latitudes<a class="headerlink" href="#increase-in-dms-emissions-high-latitudes" title="Permalink to this headline">¶</a></h2>
+<p>In components/micom/hamocc/beleg_bgc.F90</p>
+<p>Line 191 changed from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>epsher = 0.9         !dimensionless fraction -fraction of grazing egested
+
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>epsher = 0.85         !dimensionless fraction -fraction of grazing egested
+
+</pre></div>
+</div>
+<p>and Line 304</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>dmspar(5)=1.25*0.109784522E-01  !2*0.02   production with delsil 
+
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al., 06 Table 1, but increased by a factor of 2
+      
+</pre></div>
+</div>
+</div>
+<div class="section" id="other-ihamocc-modifications">
+<h2>Other iHAMOCC modifications<a class="headerlink" href="#other-ihamocc-modifications" title="Permalink to this headline">¶</a></h2>
+<p>In components/micom/hamocc/beleg_bgc.F90</p>
+<p>Line 209 from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>bkopal = 1.e-6    !i.e. 1.0 mmol Si/m3 
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>bkopal = 5.e-6    !i.e. 1.0 mmol Si/m3 
+</pre></div>
+</div>
+<p>Line 269 from</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#elif defined(WLIN) 
+      rcalc = 48.  ! calcium carbonate to organic phosphorous production ratio
+      ropal = 35.  ! opal to organic phosphorous production ratio 
+</pre></div>
+</div>
+<p>to</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#elif defined(WLIN) 
+      rcalc = 35.  ! calcium carbonate to organic phosphorous production ratio
+      ropal = 45.  ! opal to organic phosphorous production ratio 
+</pre></div>
+</div>
+</div>
+<div class="section" id="long-wave-aod-fix">
+<h2>Long wave AOD fix<a class="headerlink" href="#long-wave-aod-fix" title="Permalink to this headline">¶</a></h2>
+<p>Long wave aerosol optical depth (AOD) bug fixer: components/cam/src/physics/cam_oslo/optinterpol.F90</p>
+<p><strong>Information about the bug:</strong> The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="user-name-lists">
+<h1>User name lists<a class="headerlink" href="#user-name-lists" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="new-emission-files-files-in-cam6-nor-frc2">
+<h2>New emission files files in CAM6-Nor (FRC2)<a class="headerlink" href="#new-emission-files-files-in-cam6-nor-frc2" title="Permalink to this headline">¶</a></h2>
+<p>A new set of emission files have been made to avoid the occurence of random mid-month model crashes. These crashes are related to the reading of emission files, but are still under investigation.</p>
+<p>For list of files, please see user_nl_cam below</p>
+</div>
+<div class="section" id="gamma">
+<h2>gamma<a class="headerlink" href="#gamma" title="Permalink to this headline">¶</a></h2>
+<p><em>Gamma</em> controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.</p>
+</div>
+<div class="section" id="iceopt">
+<h2>iceopt<a class="headerlink" href="#iceopt" title="Permalink to this headline">¶</a></h2>
+<p>Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.</p>
+</div>
+<div class="section" id="user-nl-micom">
+<h2>user_nl_micom<a class="headerlink" href="#user-nl-micom" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">CWMWTH</span> <span class="o">=</span> <span class="s2">&quot;      30.e3,      30.e3&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="user-nl-cam">
+<h2>user_nl_cam<a class="headerlink" href="#user-nl-cam" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>! Users should add all user specific namelist changes below in the form of
+! namelist_var = new_namelist_value
+
+&amp;dyn_fv_inparm
+ fv_am_correction= .true.
+ fv_am_diag      = .true.
+ fv_am_fix_lbl   = .true.
+ fv_am_fixer     = .true.
+
+&amp;phys_ctl_nl
+ dme_energy_adjust = .true.
+ aerotab_table_dir = &#39;/cluster/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17&#39;
+
+&amp;circ_diag_nl
+ do_circulation_diags = .true.
+
+ clubb_history  = .false.
+ history_budget = .false.
+ history_vdiag  = .false.
+
+&amp;zmconv_nl
+ zmconv_c0_lnd    =  0.0200D0
+ zmconv_c0_ocn    =  0.0200D0
+ zmconv_ke        =  8.0E-6
+
+&amp;micro_mg_nl
+ micro_mg_dcs     = 5.5e-4
+
+&amp;clubb_params_nl
+ clubb_gamma_coef = 0.283
+
+&amp;gw_drag_nl
+ tau_0_ubc        = .true.
+
+&amp;cldfrc2m_nl
+ cldfrc2m_rhmini =0.90D0
+
+&amp;chem_inparm
+ ext_frc_specifier = &#39;H2O    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/elev/H2O_emission_CH4_oxidationx2_elev_3DmonthlyL70_1850climoCMIP6piControl001_y21-50avg_c180802.nc&#39;,
+         &#39;BC_AX  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_AX_airALL_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;BC_AX  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_AX_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;BC_N   -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_N_airALL_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;BC_N   -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_N_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;BC_NI  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_BC_NI_bbAGRIBORFDEFOPEATSAVATEMF_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;OM_NI  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_airALL_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;OM_NI  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;OM_NI  -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_OM_NI_bbAGRIBORFDEFOPEATSAVATEMF_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;SO2    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_airALL_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;SO2    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;SO2    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_bbAGRIBORFDEFOPEATSAVATEMF_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;SO2    -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO2_volcCONTEXPL_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;SO4_PR -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_airALL_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;SO4_PR -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_anthroprofENEIND_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;SO4_PR -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_bbAGRIBORFDEFOPEATSAVATEMF_vertical_1850_0.9x1.25_version20180512.nc&#39;,
+         &#39;SO4_PR -&gt;  /cluster/shared/noresm/inputdata/atm/cam/chem/emis/cmip6_emissions_version20180512/emissions_cmip6_noresm2_SO4_PR_volcCONTEXPL_vertical_1850_0.9x1.25_version20180512.nc&#39;
+ tracer_cnst_file  = &#39;tracer_cnst_WACCM6_halons_3DmonthlyL70_1850climoCMIP6piControl001_y21-50avg_c180802.nc&#39;
+
+&amp;prescribed_ozone_nl
+ prescribed_ozone_file          = &#39;ozone_strataero_cyclical_WACCM6_L70_CMIP6-piControl.001_y21-50avg_zm_5day_c180802.nc&#39;
+
+
+                             
+</pre></div>
+</div>
+</div>
+<div class="section" id="user-nl-clm">
+<h2>user_nl_clm<a class="headerlink" href="#user-nl-clm" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">finidat</span> <span class="o">=</span> <span class="s1">&#39;/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc&#39;</span>
+<span class="n">use_init_interp</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+<span class="n">reset_snow</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="time-series-of-spinup">
+<h1>Time series of spinup<a class="headerlink" href="#time-series-of-spinup" title="Permalink to this headline">¶</a></h1>
+<figure>
+  <img src="images/spinupmm_6.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <figcaption><b>NorESM2-MM spinup simulation</b><br>
+    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+  </figcaption>
+</figure>
+<figure>
+  <img src="images/spinupmm_emis6.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+  <figcaption><b>NorESM2-MM spinup simulation</b><br>
+    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+  </figcaption>
+</figure>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/noresm2_mm_spin"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Ada Gjermundsen<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
