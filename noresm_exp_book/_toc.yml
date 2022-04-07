@@ -15,7 +15,6 @@ chapters:
     title: NorESM2-MM abrupt-4xCO2
   - file: noresm2_deck/noresm2_mm_1pctCO2
     title: NorESM2-MM 1ptcCO2
-
 # NorESM2-LM DESCK experiments
 - file: noresm2_deck/noresm2_lm_deck
 #  title: NorESM2-LM DECK
@@ -28,7 +27,6 @@ chapters:
     title: NorESM2-LM abrupt-4xCO2
   - file: noresm2_deck/noresm2_lm_1pctCO2
     title: NorESM2-LM 1ptcCO2
-  
 # NorESM2-LM historical experiments
 - file: /noresm2_hist/noresm2_hist
   title: NorESM2 historical 
@@ -37,11 +35,9 @@ chapters:
     title: NorESM2-MM historical  
   - file: /noresm2_hist/noresm2_lm_hist
     title: NorESM2-LM historical
-
 # NorESM2-LM and NorESM2-MM scenario experiments
 - file: /NSSPs/noresm2_mm_nssp
   title: NorESM2 SSPs
-  
 # NorESM2-LM spin up experiments
 - file: /noresm2_lm_spin/noresm2_lm_spin_intro
   title: NorESM2-LM spin up 
@@ -72,8 +68,6 @@ chapters:
     title: N1850_f19_tn14_06062019
   - file: /noresm2_lm_spin/noresm2_lm_spin13
     title: N1850_f19_tn14_11062019
-    
-
 # NorESM2-MM spin up experiments
 - file: /noresm2_mm_spin/noresm2_mm_spin_intro
   title: NorESM2-MM spin up 
@@ -114,12 +108,9 @@ chapters:
     title: N1850_f09_tn14_20190812
   - file: /noresm2_mm_spin/noresm2_mm_spin18
     title: N1850_f09_tn14_20190913
-    
-
-
 # External link
-#- title: Github repository
-#  url: https://github.com/NorESMhub/noresm-exp
+- title: Github repository
+  url: https://github.com/NorESMhub/noresm-exp
 #  external: true
 
 
