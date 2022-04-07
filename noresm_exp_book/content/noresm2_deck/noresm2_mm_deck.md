@@ -43,7 +43,7 @@ for AMIP details, please see NorESM2-MM historical
 ---------------------------------------------------
 ## Time series of NorESM2-MM DECK experiments
 
-```{figure} ../images/DECKmm.png
+```{figure} content/noresm2_deck/images/DECKmm.png
 ---
 width: 100%
 align: left
@@ -55,7 +55,7 @@ name: NorESM2-MM-DECK-simulations
 The figure shows annual average (dots) and 5-year moving average (solid line).
 ```
 
-```{figure} ../images/DECKmmi-emis.png
+```{figure} content/noresm2_deck/images/DECKmm-emis.png
 ---
 width: 100%
 align: left
