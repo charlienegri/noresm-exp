@@ -1,9 +1,9 @@
 **Detailed information about the simulations can be found by clicking on case names in the table of contents or at the bottom of this page**
 
-# A quick overview
+## A quick overview
 
 
-## piControl
+### piControl
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :---: |   :---: | 
@@ -14,7 +14,7 @@
 Please note that the year 1450 is calculated twice, in both N1850frc2_f09_tn14_20191012 and N1850frc2_f09_tn14_20191113
 
 ------------------------------------------------
-## abrupt-4xCO2
+### abrupt-4xCO2
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :---: |  :---: | 
@@ -22,7 +22,7 @@ Please note that the year 1450 is calculated twice, in both N1850frc2_f09_tn14_2
 |NCO2x4frc2_f09_tn14_20191028|  0121-01-01  | 121 - 150  |
 
 ---------------------------------------------------
-## 1pctCO2
+### 1pctCO2
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :---: |  :---: | 
@@ -30,7 +30,7 @@ Please note that the year 1450 is calculated twice, in both N1850frc2_f09_tn14_2
 |N1PCTfrc2_f09_tn14_20191028|  0121-01-01  | 121 - 150  |
 -----------------------------------
 
-## AMIP
+### AMIP
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :---: |   :---: | 
 |NFHISTfrc2_f09_mg17_20191107|  -  | 1975 - 2012 |
@@ -39,7 +39,18 @@ Please note that the year 1450 is calculated twice, in both N1850frc2_f09_tn14_2
 for AMIP details, please see NorESM2-MM historical
 
 ---------------------------------------------------
-# Time series of NorESM2-MM DECK experiments
+## Time series of NorESM2-MM DECK experiments
+
+```{figure} ../images/C-3PO_droid.png
+---
+width: 100%
+name: NorESM2-MM-DECK-simulations
+---
+**NorESM2-MM DECK simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). 
+**Right column (from top to bottom)** Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.  
+The figure shows annual average (dots) and 5-year moving average (solid line).
+```
 
 <figure>
   <img src="images/DECKmm.png" alt="NorESM2-MM DECK simulations<" style="width:100%">
