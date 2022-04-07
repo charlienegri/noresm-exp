@@ -75,8 +75,8 @@ parts:
     
 
 # NorESM2-MM spin up experiments
-- title: NorESM2-MM spin up 
-  file: /noresm2_mm_spin/noresm2_mm_spin_intro
+- file: /noresm2_mm_spin/noresm2_mm_spin_intro
+  title: NorESM2-MM spin up 
   chapters:
   - file: /noresm2_mm_spin/noresm2_mm_spin1
     title: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
@@ -118,8 +118,8 @@ parts:
 
 
 # External link
-- title: Github repository
-  url: https://github.com/NorESMhub/noresm-exp
+#- title: Github repository
+#  url: https://github.com/NorESMhub/noresm-exp
 #  external: true
 
 
