@@ -43,7 +43,7 @@ for AMIP details, please see NorESM2-MM historical
 ---------------------------------------------------
 ## Time series of NorESM2-MM DECK experiments
 
-```{figure-deck} ../images/DECKmm.png
+```{figure} ../images/DECKmm.png
 ---
 width: 100%
 align: left
@@ -55,11 +55,11 @@ name: NorESM2-MM-DECK-simulations
 The figure shows annual average (dots) and 5-year moving average (solid line).
 ```
 
-```{figure-deck-emis} ../images/DECKmmi-emis.png
+```{figure} ../images/DECKmmi-emis.png
 ---
 width: 100%
 align: left
-name: NorESM2-MM-DECK-simulations
+name: NorESM2-MM-DECK-simulations-2
 ---
 **NorESM2-MM DECK simulations**
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  
