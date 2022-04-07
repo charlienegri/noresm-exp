@@ -2,11 +2,11 @@ format: jb-book
 root: content/intro
 options:
   numbered: false
-parts:
+chapters:
 # NorESM2-MM DECK experiments
 - file: noresm2_deck/noresm2_mm_deck
   title: NorESM2-MM DECK
-  chapters:
+  sections:
   - file: noresm2_deck/noresm2_mm_piC
     title: NorESM2-MM piControl
   - file: noresm2_deck/noresm2_mm_amip
@@ -19,7 +19,7 @@ parts:
 # NorESM2-LM DESCK experiments
 - file: noresm2_deck/noresm2_lm_deck
 #  title: NorESM2-LM DECK
-  chapters:
+  sections:
   - file: noresm2_deck/noresm2_lm_piC
     title: NorESM2-LM piControl
   - file: content/noresm2_deck/noresm2_lm_amip
@@ -32,7 +32,7 @@ parts:
 # NorESM2-LM historical experiments
 - file: /noresm2_hist/noresm2_hist
   title: NorESM2 historical 
-  chapters:
+  sections:
   - file: /noresm2_hist/noresm2_mm_hist
     title: NorESM2-MM historical  
   - file: /noresm2_hist/noresm2_lm_hist
@@ -45,7 +45,7 @@ parts:
 # NorESM2-LM spin up experiments
 - file: /noresm2_lm_spin/noresm2_lm_spin_intro
   title: NorESM2-LM spin up 
-  chapters:
+  sections:
   - file: /noresm2_lm_spin/noresm2_lm_spin1
     title: N1850OCBDRDDMS_f19_tn14_201218
   - file: /noresm2_lm_spin/noresm2_lm_spin2
@@ -77,7 +77,7 @@ parts:
 # NorESM2-MM spin up experiments
 - file: /noresm2_mm_spin/noresm2_mm_spin_intro
   title: NorESM2-MM spin up 
-  chapters:
+  sections:
   - file: /noresm2_mm_spin/noresm2_mm_spin1
     title: N1850OCBDRDDMS_f09_tn14_ice4_gam288_20181220
   - file: /noresm2_mm_spin/noresm2_mm_spin2
