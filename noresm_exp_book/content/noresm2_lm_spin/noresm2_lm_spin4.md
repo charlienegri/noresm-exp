@@ -172,9 +172,9 @@ set CWMWTH = "      30.e3,      30.e3"
 
 ## Time series of spinup
 
-<figure>
-  <img src="images/spinup4.png" alt="NorESM2-LM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-LM spinup simulations</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. <b>Right column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
-  </figcaption>
-</figure>
+:::{figure-md} spinup4
+<img src="images/spinup4.png" alt="NorESM2-LM spinup simulations" style="width:120%">
+
+**NorESM2-LM spinup simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. **Right column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+:::
