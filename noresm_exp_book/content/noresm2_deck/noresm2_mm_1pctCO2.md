@@ -1,4 +1,6 @@
-# Data storage
+#NorESM2-MM 1ptcCO2
+
+## Data storage
 All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/
 
 
@@ -18,9 +20,9 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/1pctCO2/r1i1p1f1/
 ```
 
-# Simulation specifics
+## Simulation specifics
 
-## 	N1PCTfrc2_f09_tn14_20191008 (1 - 120)
+### 	N1PCTfrc2_f09_tn14_20191008 (1 - 120)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -36,7 +38,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/matsbn/NorESM/cases/N1PCTfrc2_f09_tn14_20191008 |
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1PCTfrc2_f09_tn14_20191008/ |
 
-## N1PCTfrc2_f09_tn14_20191028 (121 - 150, extra output)
+### N1PCTfrc2_f09_tn14_20191028 (121 - 150, extra output)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 

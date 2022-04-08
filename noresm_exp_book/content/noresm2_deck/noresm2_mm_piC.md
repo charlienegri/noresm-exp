@@ -77,7 +77,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ## Time series of NorESM2-MM pre-industrial control experiments
 
 :::{figure-md} piCmm
-<img src="images/piCmm.png" alt="NorESM2-MM piControl simulations<" style="width:100%">
+<img src="images/piCmm.png" alt="NorESM2-MM piControl simulations" style="width:100%">
 
 **NorESM2-MM piControl simulations**  
 **Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST).  
@@ -86,11 +86,22 @@ The figure shows annual average (dots) and 5-year moving average (solid line).
 :::
 
 :::{figure-md} piCmm-emis
-<img src="images/piCmm_emis.png" alt="NorESM2-MM piControl simulations<" style="width:100%">
+<img src="images/piCmm_emis.png" alt="NorESM2-MM piControl simulations" style="width:100%">
 
 **NorESM2-MM piControl simulations**  
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  
 **Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
 The figure shows annual average (dots) and 5-year moving average (solid line). 
 :::
-</figure>
+
+```{figure} images/piCmm_emis.png
+---
+width: 100%
+name: piCmm_emis
+align: left
+---
+**NorESM2-MM piControl simulations**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  
+**Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+```
