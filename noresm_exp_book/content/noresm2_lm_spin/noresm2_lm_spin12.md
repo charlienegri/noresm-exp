@@ -1,9 +1,11 @@
-# Data storage
+# N1850_f19_tn14_06062019
+
+## Data storage
 The data is stored on NIRD @ sigma2
 /projects/NS2345K/noresm/cases/N1850_f19_tn14_06062019
 
 
-# Path to case directory
+## Path to case directory
 
 /home/sm_adagj/noresm/spinupcase/N1850_f19_tn14_06062019/
 
@@ -11,11 +13,11 @@ copy on Vilje @ sigma2
 
 /home/ntnu/adagj/noresm/nebulaspinup/N1850_f19_tn14_06062019/
 
-# Path to diagnostics
+## Path to diagnostics
 
 http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_06062019/
 
-# Summary of simulation
+## Summary of simulation
 
 New in this simulation: 
 -  All code modifications were merged to featureCESM2.1.0-OsloDevelopment and the SourceMods were no longer needed
@@ -38,7 +40,7 @@ Continued to use
 
 
 
-# Simulation specifics
+## Simulation specifics
 
 |  |  |  
 | --- | :--- | 
@@ -53,7 +55,7 @@ Continued to use
 | Resolution | f19_tn14 |
 | Machine  |  Nebula  |
 
-# Node allocation
+## Node allocation
 
 ```
 
@@ -76,12 +78,12 @@ Continued to use
 
 ```
 
-# Code modifications (SourceMods)
+## Code modifications (SourceMods)
 All code modifications merged to featureCESM2.1.0-OsloDevelopment 54075ac, so no SourceMods needed
 
-# User name lists
+## User name lists
 
-## user_nl_cam
+### user_nl_cam
 ```
 &dyn_fv_inparm
  fv_am_correction= .true.
@@ -140,7 +142,7 @@ ext_frc_specifier              = 'H2O    ->  /nobackup/forsk/noresm/inputdata//a
 
 ```
 
-## user_nl_clm
+### user_nl_clm
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 ```
 finidat = '/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
@@ -149,7 +151,7 @@ reset_snow = .true.
 
 ```
 
-# Time series of spinup
+## Time series of spinup
 
 <figure>
   <img src="images/spinup12.png" alt="NorESM2-LM spinup simulations" style="width:120%">
