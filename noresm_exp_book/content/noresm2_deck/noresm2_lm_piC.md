@@ -1,4 +1,6 @@
-# Data storage
+# NorESM2-LM piControl
+
+## Data storage
 All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/
 
 
@@ -20,9 +22,9 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/piControl/r1i1p1f1/
 ```
 
-# Simulation specifics
+## Simulation specifics
 
-## N1850_f19_tn14_20190621 (1600 - 1800)
+### N1850_f19_tn14_20190621 (1600 - 1800)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -38,7 +40,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases6a0b992/N1850_f19_tn14_20190621|
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_20190621/|
 
-## N1850_f19_tn14_20190722 (1801 - 1900)
+### N1850_f19_tn14_20190722 (1801 - 1900)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -54,7 +56,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/N1850_f19_tn14_20190722 |
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_20190722/|
 
-## N1850_f19_tn14_20190802 (1901 - 1999)
+### N1850_f19_tn14_20190802 (1901 - 1999)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -70,18 +72,20 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/N1850_f19_tn14_20190802 |
 | Diagnostics |http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_20190802/ |
 
-# Time series of NorESM2-LM pre-industrial control experiments
+## Time series of NorESM2-LM pre-industrial control experiments
 
-<figure>
-  <img src="images/piClm.png" alt="NorESM2-LM piControl simulations<" style="width:100%">
-  <figcaption><b>NorESM2-LM piControl simulations</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N. The figure shows annual average (dots) and 5-year moving average (solid line). 
-  </figcaption>
-</figure>
+:::{figure-md} piClm
+<img src="images/piClm.png" alt="NorESM2-LM piControl simulations<" style="width:100%">
 
-<figure>
-  <img src="images/piClm_emis.png" alt="NorESM2-LM piControl simulations<" style="width:100%">
-  <figcaption><b>NorESM2-LM piControl simulations</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing. The figure shows annual average (dots) and 5-year moving average (solid line). 
-  </figcaption>
-</figure>
+**NorESM2-LM piControl simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.   \
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+:::
+
+:::{figure-md} piClm_emis
+<img src="images/piClm_emis.png" alt="NorESM2-LM piControl simulations<" style="width:100%">
+
+**NorESM2-LM piControl simulations**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+:::

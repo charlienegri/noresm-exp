@@ -1,6 +1,6 @@
+# NorESM2-LM abrupt-4xCO2
 
-
-# Data storage
+## Data storage
 All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/
 
 
@@ -24,9 +24,9 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-LM/abrupt-4xCO2/r1i1p1f1/
 ```
 
-# Simulation specifics
+## Simulation specifics
 
-## NCO2x4_f19_tn14_20190624 (1 - 140)
+### NCO2x4_f19_tn14_20190624 (1 - 140)
 
 |  |  |  
 | --- | :--- | 
@@ -43,7 +43,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/oyvinds/NorESM2_CMIP6/cases/NCO2x4_f19_tn14_20190624|
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4_f19_tn14_20190624/ |
 
-## NCO2x4_f19_tn14_20190705 (121 - 150, extra output)
+### NCO2x4_f19_tn14_20190705 (121 - 150, extra output)
 
 |  |  |  
 | --- | :--- | 
@@ -60,7 +60,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/olivie/cases-cmip6/NCO2x4_f19_tn14_20190705 |
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4_f19_tn14_20190624/ |
 
-## NCO2x4_f19_tn14_20190724 (151 - 500)
+### NCO2x4_f19_tn14_20190724 (151 - 500)
 
 |  |  |  
 | --- | :--- | 
@@ -78,7 +78,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4_f19_tn14_20190724/ |
 
 
-## NCO2x4_f19_tn14_20191129 (501 - 620)
+### NCO2x4_f19_tn14_20191129 (501 - 620)
 
 |  |  |  
 | --- | :--- | 
@@ -95,18 +95,20 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder |  /home/sm_adagj/noresm/cases-cmip6/NCO2x4_f19_tn14_20191129 |
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NCO2x4_f19_tn14_20191129/ |
 
-# Time series of NorESM2-LM abrupt quadrupling of atmospheric CO2 concentration experiments
+## Time series of NorESM2-LM abrupt quadrupling of atmospheric CO2 concentration experiments
 
-<figure>
-  <img src="images/NCO2x4lm.png" alt="NorESM2-LM abrupt-4xCO2 simulations<" style="width:100%">
-  <figcaption><b>NorESM2-LM abrupt-4xCO2  simulations</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N. The figure shows annual average (dots) and 5-year moving average (solid line). 
-  </figcaption>
-</figure>
+:::{figure-md} NCO2x4lm
+<img src="images/NCO2x4lm.png" alt="NorESM2-LM abrupt-4xCO2 simulations<" style="width:100%">
 
-<figure>
-  <img src="images/NCO2x4lm_emis.png" alt="NorESM2-LM abrupt-4xCO2  simulations<" style="width:100%">
-  <figcaption><b>NorESM2-LM abrupt-4xCO2  simulations</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing. The figure shows annual average (dots) and 5-year moving average (solid line). 
-  </figcaption>
-</figure>
+**NorESM2-LM abrupt-4xCO2 simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.  
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+:::
+
+:::{figure-md} NCO2x4lm_emis
+<img src="images/NCO2x4lm_emis.png" alt="NorESM2-LM abrupt-4xCO2  simulations<" style="width:100%">
+
+**NorESM2-LM abrupt-4xCO2 simulations**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  **Right column (from top to bottom):**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+:::
