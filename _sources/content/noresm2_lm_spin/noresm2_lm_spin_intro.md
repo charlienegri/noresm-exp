@@ -1,3 +1,5 @@
+# NorESM2-LM spin up
+
 **Detailed information about the simulations can be found by clicking on case names in the table of contents or at the bottom of this page**
 
 # A quick overview
@@ -18,7 +20,7 @@
 |N1850_f19_tn14_11062019| 1566-01-01 | 1566 - 1600 |
 
 
-# Time series of spinup
+## Time series of spinup
 
 <figure>
   <img src="images/spinup.png" alt="NorESM2-LM spinup simulations" style="width:150%">

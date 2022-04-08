@@ -1,9 +1,11 @@
-# Data storage
+# N1850OCBDRDDMS_f19_tn14_25042019
+
+## Data storage
 The data is stored on NIRD @ sigma2
 /projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_25042019
 
 
-# Path to case directory
+## Path to case directory
 
 /home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_25042019/
 
@@ -11,11 +13,11 @@ copy on Vilje @ sigma2
 
 /home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_25042019/
 
-# Path to diagnostics
+## Path to diagnostics
 
 http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f19_tn14_25042019/
 
-# Summary of simulation
+## Summary of simulation
 New in this simulation: 
 - reduced the DMS flux at high latitudes (compared to 15042019)
 - included new emission files from Dirk to avoid mid-month crashes from yr 891. We have not experienced any mid-month crashes after.
@@ -32,7 +34,7 @@ Continued to use
 -  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
 
 
-# Simulation specifics
+## Simulation specifics
 
 |  |  |  
 | --- | :--- | 
@@ -47,7 +49,7 @@ Continued to use
 | Resolution | f19_tn14 |
 | Machine  |  Nebula  |
 
-# Node allocation
+## Node allocation
 
 ```
 
@@ -70,9 +72,9 @@ Continued to use
 
 ```
 
-# Code modifications (SourceMods)
+## Code modifications (SourceMods)
 
-## Increase in DMS emissions @ high latitudes
+### Increase in DMS emissions @ high latitudes
 
 In components/micom/hamocc/beleg_bgc.F90
 
@@ -117,13 +119,13 @@ dmspar(4)=1.25*0.10      ! production with delcar, following Kloster et al., 06 
 
 
 
-## Moist convection in CAM
+### Moist convection in CAM
 Moist convection modifications ("zmst" modifications) in
 
 components/cam/src/NorESM/zm_convF90: 
  
 
-## Increased error tolerance in energy conservation test in CICE
+### Increased error tolerance in energy conservation test in CICE
 ferr = energy conservation error (W m-2)
 
 Line 2390 in /components/cice/src/source/ice_therm_vertical.F90
@@ -141,19 +143,19 @@ to
 if (ferr > 2*ferrmax) then
 
 ```
-## Long wave AOD fix
+### Long wave AOD fix
 
 Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90
 
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
 
-# Minor code changes 
+## Minor code changes 
 which were included but didn't impact the model results
 
-## Time variable in MICOM output 
+### Time variable in MICOM output 
 Modifications added to components/micom/phy/rdlim.F 
 
-## Problems with fill values on Nebula 
+### Problems with fill values on Nebula 
 
 components/mosart/src/riverroute/RtmRestFile.F90
 
@@ -171,9 +173,9 @@ long_name=trim(lname), units=trim(uname))
 
 ```
 
-# User name lists
+## User name lists
 
-## user_nl_cam
+### user_nl_cam
 ```
 &dyn_fv_inparm
  fv_am_correction= .true.
@@ -232,7 +234,7 @@ ext_frc_specifier              = 'H2O    ->  /nobackup/forsk/noresm/inputdata//a
 
 ```
 
-## user_nl_clm
+### user_nl_clm
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 ```
 finidat = '/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
@@ -240,7 +242,7 @@ use_init_interp = .true.
 reset_snow = .true.
 
 ```
-## user_nl_micom
+### user_nl_micom
 
 Increased width of Strait of Gibraltar from 15 km to 30 km
 
@@ -248,7 +250,7 @@ Increased width of Strait of Gibraltar from 15 km to 30 km
 set CWMWTH = "      30.e3,      30.e3"
 
 ```
-# Time series of spinup
+## Time series of spinup
 
 <figure>
   <img src="images/spinup7.png" alt="NorESM2-LM spinup simulations" style="width:120%">

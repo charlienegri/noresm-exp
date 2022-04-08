@@ -1,19 +1,21 @@
-# Data storage
+# N1850OCBDRDDMS_f19_tn14_250119
+
+## Data storage
 The data is stored on NIRD @ sigma2
 
 /projects/NS2345K/DO_NOT_TOUCH/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_250119
 
-# Path to case directory
+## Path to case directory
 
 on Vilje @ sigma2
 
 /home/metno/oyvinds/NorESM2old/noresmdevcases/N1850OCBDRDDMS_f19_tn14_250119
 
-# Path to diagnostics
+## Path to diagnostics
 
 http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f19_tn14_250119/
 
-# Summary of simulation
+## Summary of simulation
 - To reduce the net radiation imbalance @TOM (top of model) the sea-salt emissions were increased by 10% 
 - Increased (x2) error tolerance in energy conservation test in CICE
 - Modifications to the convection code included as SourceMod 
@@ -27,7 +29,7 @@ http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f19_tn14_2
  
 For all user name list specifics, see bottom of this page
 
-# Simulation specifics
+## Simulation specifics
 
 |  |  |  
 | --- | :--- | 
@@ -42,10 +44,9 @@ For all user name list specifics, see bottom of this page
 | Resolution | f19_tn14 |
 | Machine  |  Vilje  |
 
-# Node allocation
+## Node allocation
 
 ```
-
  <entry id="NTASKS">
       <type>integer</type>
       <values>
@@ -61,13 +62,11 @@ For all user name list specifics, see bottom of this page
       </values>
       <desc>number of tasks for each component</desc>
     </entry>
-
-
 ```
 
-# Code modifications (SourceMods)
+## Code modifications (SourceMods)
 
-## iHAMOCC modifications
+### iHAMOCC modifications
 
 In components/micom/hamocc/beleg_bgc.F90
 
@@ -98,7 +97,7 @@ to
 ```
 
 
-## 1.1 x seasalt emissions
+### 1.1 x seasalt emissions
 
 Line 176 in components/cam/src/chemistry/oslo_aero/seasalt_model.F90 
 ```
@@ -112,7 +111,7 @@ Line 176 in components/cam/src/chemistry/oslo_aero/seasalt_model.F90
 
 ```
 
-## Moist convection in CAM
+### Moist convection in CAM
 Moist convection modifications ("zmst" modifications) in
 
 components/cam/src/NorESM/zm_convF90: 
@@ -136,15 +135,16 @@ to
 if (ferr > 2*ferrmax) then
 ```
 
-## Includes the long wave aod error
+### Includes the long wave aod error
 
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
 
 Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 
-# User name lists
+## User name lists
 
-## user_nl_cam
+### user_nl_cam
+
 ``` 
 &dyn_fv_inparm
  fv_am_correction= .true.
@@ -176,10 +176,9 @@ Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_07052019
 &phys_ctl_nl
 aerotab_table_dir =
 '/work/shared/noresm/inputdata/noresm-only/atm/cam/camoslo/AeroTab_8jun17'
-
 ```
 
-## user_nl_clm
+### user_nl_clm
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 ```
 finidat = '/work/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
@@ -188,7 +187,7 @@ reset_snow = .true.
 
 ```
 
-# Time series of spinup
+## Time series of spinup
 
 <figure>
   <img src="images/spinup2.png" alt="NorESM2-LM spinup simulations" style="width:120%">

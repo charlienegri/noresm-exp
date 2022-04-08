@@ -1,9 +1,11 @@
-# Data storage
+# N1850OCBDRDDMS_f19_tn14_07052019
+
+## Data storage
 The data is stored on NIRD @ sigma2
 /projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f19_tn14_07052019
 
 
-# Path to case directory
+## Path to case directory
 
 /home/sm_adagj/noresm/spinupcase/N1850OCBDRDDMS_f19_tn14_07052019/
 
@@ -11,11 +13,11 @@ copy on Vilje @ sigma2
 
 /home/ntnu/adagj/noresm/nebulaspinup/N1850OCBDRDDMS_f19_tn14_07052019/
 
-# Path to diagnostics
+## Path to diagnostics
 
 --
 
-# Summary of simulation
+## Summary of simulation
  **This simulation was not used in the spinup of NorESM2-LM, instead N1850OCBDRDDMS_f19_tn14_08052019 (with gamma set to 0.263 was used)**
 
 New in this simulation: 
@@ -37,7 +39,7 @@ File modifications to components/mosart/src/riverroute/RtmRestFile.F90 which fix
 and to components/micom/phy/rdlim.F which fixed the time variable output problem in micom were merged into featureCESM2.1.0-OsloDevelopment
 and the SourceMods no longer needed
 
-# Simulation specifics
+## Simulation specifics
 
 |  |  |  
 | --- | :--- | 
@@ -52,7 +54,7 @@ and the SourceMods no longer needed
 | Resolution | f19_tn14 |
 | Machine  |  Nebula  |
 
-# Node allocation
+## Node allocation
 
 ```
 
@@ -75,9 +77,9 @@ and the SourceMods no longer needed
 
 ```
 
-# Code modifications (SourceMods)
+## Code modifications (SourceMods)
 
-## Increase in DMS emissions @ high latitudes
+### Increase in DMS emissions @ high latitudes
 
 In components/micom/hamocc/beleg_bgc.F90
 
@@ -122,13 +124,13 @@ dmspar(4)=1.25*0.10      ! production with delcar, following Kloster et al., 06 
 
 
 
-## Moist convection in CAM
+### Moist convection in CAM
 Moist convection modifications ("zmst" modifications) in
 
 components/cam/src/NorESM/zm_convF90: 
  
 
-## Long wave AOD fix
+### Long wave AOD fix
 
 Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90
 
@@ -136,9 +138,9 @@ Long wave aerosol optical depth (AOD) bug fixer: optinterpol.F90
 
 
 
-# User name lists
+## User name lists
 
-## user_nl_cam
+### user_nl_cam
 ```
 &dyn_fv_inparm
  fv_am_correction= .true.
@@ -197,7 +199,7 @@ ext_frc_specifier              = 'H2O    ->  /nobackup/forsk/noresm/inputdata//a
 
 ```
 
-## user_nl_clm
+### user_nl_clm
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 ```
 finidat = '/nobackup/forsk/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
@@ -205,7 +207,7 @@ use_init_interp = .true.
 reset_snow = .true.
 
 ```
-## user_nl_micom
+### user_nl_micom
 
 Increased width of Strait of Gibraltar from 15 km to 30 km
 
@@ -214,7 +216,7 @@ set CWMWTH = "      30.e3,      30.e3"
 
 ```
 
-# Time series of spinup
+## Time series of spinup
 
 <figure>
   <img src="images/spinup8.png" alt="NorESM2-LM spinup simulations" style="width:120%">

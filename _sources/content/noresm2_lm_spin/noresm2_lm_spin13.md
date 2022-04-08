@@ -1,22 +1,24 @@
-# Data storage
+# N1850_f19_tn14_11062019
+
+## Data storage
 The data is stored on NIRD @ sigma2
 
 /projects/NS9560K/noresm/cases/N1850_f19_tn14_11062019
 
 /projects/NS2345K/noresm/cases/N1850_f19_tn14_11062019_vilje
 
-# Path to case directory
+## Path to case directory
 
 on Fram @ sigma2: /cluster/projects/nn2345k/adagj/NorESM/cases/N1850_f19_tn14_11062019
 
 on Vilje @ sigma2: /home/ntnu/adagj/noresm/cases_2.1.0/N1850_f19_tn14_11062019_vilje
 
-# Path to diagnostics
+## Path to diagnostics
 
 http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f19_tn14_11062019/
 
 
-# Summary of simulation
+## Summary of simulation
 
 New in this simulation: 
 -  Spin up simulation moved from Nebula @ nsc.liu to Fram @ sigma2 and an identical simulation on Vilje @ sigma2
@@ -36,7 +38,7 @@ Continued to use
 -  the modifications to the convection code included as SourceMod 
 -  the namelist changes compared to repository for CAM6-Nor, MICOM and CLM5
 
-# Simulation specifics
+## Simulation specifics
 
 |  |  |  
 | --- | :--- | 
@@ -51,7 +53,7 @@ Continued to use
 | Resolution | f19_tn14 |
 | Machine  |  Fram and Vilje  |
 
-# Node allocation
+## Node allocation
 
 ```
 
@@ -74,14 +76,14 @@ Continued to use
 
 ```
 
-# Code modifications (SourceMods)
+## Code modifications (SourceMods)
 All code modifications merged to featureCESM2.1.0-OsloDevelopment 54075ac, so no SourceMods needed
 
-# User name lists
+## User name lists
 All user list settings included in the main source code, so no user list settings needed. 
 However, the "old" user_nl_clm (should not have any impact at all)
 
-## user_nl_clm
+### user_nl_clm
 
 Reset snow: Remove infiltration excess water as runoff if the temperature of the surface water pool is below freezing. 
 
@@ -91,7 +93,7 @@ use_init_interp = .true.
 reset_snow = .true.
 ```
 
-# Time series of spinup
+## Time series of spinup
 
 <figure>
   <img src="images/spinup13.png" alt="NorESM2-LM spinup simulations" style="width:120%">
