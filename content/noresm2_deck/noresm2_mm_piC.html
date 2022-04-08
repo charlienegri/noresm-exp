@@ -122,12 +122,12 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="noresm2_mm_4xCO2.html">
-     Data storage
+     NorESM2-MM abrupt-4xCO2
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="noresm2_mm_1pctCO2.html">
-     Data storage
+     NorESM2-MM 1ptcCO2
     </a>
    </li>
   </ul>
@@ -137,10 +137,27 @@ const thebe_selector_output = ".output, .cell_output"
    A quick overview
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../noresm2_hist/noresm2_hist.html">
-   A quick overview
+   NorESM2 historical
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_hist/noresm2_mm_hist.html">
+     NorESM2-MM historical
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../noresm2_hist/noresm2_lm_hist.html">
+     NorESM2-LM historical
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../NSSPs/noresm2_mm_nssp.html">
@@ -512,23 +529,16 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="time-series-of-noresm2-mm-pre-industrial-control-experiments">
 <h2>Time series of NorESM2-MM pre-industrial control experiments<a class="headerlink" href="#time-series-of-noresm2-mm-pre-industrial-control-experiments" title="Permalink to this headline">¶</a></h2>
-<p>:::{figure-md} piCmm
-<img alt="NorESM2-MM piControl simulations" src="../../_images/piCmm.png" /></p>
-<p><strong>NorESM2-MM piControl simulations</strong><br />
+<div class="figure align-left" id="picmm">
+<a class="reference internal image-reference" href="../../_images/piCmm.png"><img alt="../../_images/piCmm.png" src="../../_images/piCmm.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text"><strong>NorESM2-MM piControl simulations</strong><br />
 <strong>Left column (from top to bottom):</strong> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST).<br />
 <strong>Right column (from top to bottom):</strong> Globally and annually averaged Net radiation &#64; top of model, Atlantic meridional overturning circulation (AMOC) &#64; 26.5N.<br />
-The figure shows annual average (dots) and 5-year moving average (solid line).
-:::</p>
-<p>:::{figure-md} piCmm-emis
-<img alt="NorESM2-MM piControl simulations" src="../../_images/piCmm_emis.png" /></p>
-<p><strong>NorESM2-MM piControl simulations</strong><br />
-<strong>Left column (from top to bottom):</strong> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.<br />
-<strong>Right column (from top to bottom):</strong> Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.<br />
-The figure shows annual average (dots) and 5-year moving average (solid line).
-:::</p>
+The figure shows annual average (dots) and 5-year moving average (solid line).</span><a class="headerlink" href="#picmm" title="Permalink to this image">¶</a></p>
+</div>
 <div class="figure align-left" id="picmm-emis">
 <a class="reference internal image-reference" href="../../_images/piCmm_emis.png"><img alt="../../_images/piCmm_emis.png" src="../../_images/piCmm_emis.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text"><strong>NorESM2-MM piControl simulations</strong><br />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text"><strong>NorESM2-MM piControl simulations</strong><br />
 <strong>Left column (from top to bottom):</strong> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.<br />
 <strong>Right column (from top to bottom):</strong> Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.<br />
 The figure shows annual average (dots) and 5-year moving average (solid line).</span><a class="headerlink" href="#picmm-emis" title="Permalink to this image">¶</a></p>

@@ -1,4 +1,4 @@
-#NorESM2-MM 1ptcCO2
+# NorESM2-MM 1ptcCO2
 
 ## Data storage
 All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/
