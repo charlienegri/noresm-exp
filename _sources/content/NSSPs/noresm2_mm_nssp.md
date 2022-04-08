@@ -3,7 +3,7 @@
 **Detailed information about the simulations can be found by clicking on case names in the table of contents or at the bottom of this page**
 
 ## Future scenarios 
-#### Shared Socioeconomic Pathways 
+### Shared Socioeconomic Pathways 
 SSPs: Shared Socioeconomic Pathways serve as basis for new emissions and socio-economic scenarios for future climate projections used in CMIP6:
 
 - SSP1:	Sustainability – Taking the Green Road (Low challenges to mitigation and adaptation)
@@ -15,7 +15,7 @@ SSPs: Shared Socioeconomic Pathways serve as basis for new emissions and socio-e
 See Riahi 2017 for a more detailed description (https://www.sciencedirect.com/science/article/pii/S0959378016300681)
 and BC O’Neill 2016 (https://gmd.copernicus.org/articles/9/3461/2016/gmd-9-3461-2016.pdf)
 
-#### Representative Concentration Pathways
+### Representative Concentration Pathways
 RCPs: Representative Concentration Pathways are future projections of atmospheric greenhouse gas concentrations and subsequent radiative forcing. 
 The number after RCP represent the radiative forcing by year 2100.
 
@@ -30,7 +30,7 @@ For a brief description, also see https://www.carbonbrief.org/explainer-how-shar
 
 For an overview and description of the various CMIP6 experiments, please see: https://search.es-doc.org/
 
-#### SSP-based RCP scenarios:
+### SSP-based RCP scenarios:
 - **SSP1-2.6:** SSP-based RCP scenario with low radiative forcing by the end of the century. Following approximately RCP2.6 global forcing pathway with SSP1 socioeconomic conditions. Radiative forcing reaches a level of 2.6 W/m2 in 2100. Concentration-driven. The scenario represents the low end of the range of plausible future pathways. The scenario depicts the "best case" future from the sustainability perspective.
 - **SSP2-4.5:** SSP-based RCP scenario with medium radiative forcing by the end of the century. Following approximately RCP4.5 global forcing pathway with SSP2 socioeconomic conditions. Radiative forcing reaches a level of 4.5 W/m2 in 2100. Concentration-driven. The scenario represents the medium part of the range of plausible future pathways.
 - **SSP3-7.0:** Baseline scenario with a medium to high radiative forcing by the end of century. Following approximately RCP7.0 global forcing pathway with SSP3 socioeconomic conditions. Radiative forcing reaches a level of 7.0 W/m2 in 2100. Concentration-driven. The scenario represents the medium to high end of plausible future pathways. SSP3-7.0 fills a gap in the CMIP5 forcing pathways that is particularly important because it represents a forcing level common to several (unmitigated) SSP baselines.
