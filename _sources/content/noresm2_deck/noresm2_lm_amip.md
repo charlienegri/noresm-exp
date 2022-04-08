@@ -1,11 +1,13 @@
-# Data storage
+# NorESM2-LM AMIP
+
+## Data storage
 All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/
 
 All raw data from NorESM2-LM historical simulations are stored on NIRD @ sigma2 under:
 ```
 /projects/NS9560K/noresm/cases/
 ```
-# AMIP
+## AMIP
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with **NFHIST_**
 
@@ -30,9 +32,9 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 ```
 and is from original output of **NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)**, but will be updated soon.
 
-# Simulation specifics
+## Simulation specifics
 
-## NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)
+### NFHISTnorpddmsbc_f19_mg17_20191025 (1979 - 2014)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -48,7 +50,7 @@ and is from original output of **NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014
 | Case folder | /home/ntnu/olivie/cases-cmip6/NFHISTnorpddmsbc_f19_mg17_20191025|
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresm/common/NFHISTnorpddmsbc_f19_mg17_20191025/ |
 
-## NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)
+### NFHISTnorpddmsbc_f19_mg17_20190807 (1979 - 2014)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
