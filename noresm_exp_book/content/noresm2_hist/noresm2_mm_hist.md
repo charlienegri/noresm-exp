@@ -1,4 +1,6 @@
-# Data storage
+# NorESM2-MM historical
+
+## Data storage
 All data are CMOR-ized and public available here: https://esg-dn1.nsc.liu.se/search/cmip6-liu/
 
 All raw data from NorESM2-MM historical simulations are stored on NIRD @ sigma2 under:
@@ -6,7 +8,7 @@ All raw data from NorESM2-MM historical simulations are stored on NIRD @ sigma2 
 /projects/NS9560K/noresm/cases/
 ```
 
-## Fully coupled simulations
+### Fully coupled simulations
 
 Fully coupled historical simulations start with NHIST_
 
@@ -27,9 +29,9 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/historical/
 ```
 
-# Simulation specifics - ensemble member nr.1
+## Simulation specifics - ensemble member nr.1
 
-## NHISTfrc2_f09_tn14_20191001 (1850 - 1949) 
+### NHISTfrc2_f09_tn14_20191001 (1850 - 1949) 
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -45,7 +47,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NHISTfrc2_f09_tn14_20191001 |
 | Diagnostics | - |
 
-## NHISTfrc2_f09_tn14_20191025 (1950-2014)
+### NHISTfrc2_f09_tn14_20191025 (1950-2014)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -61,9 +63,9 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder |/cluster/projects/nn2345k/matsbn/NorESM/cases/NHISTfrc2_f09_tn14_20191025  |
 | Diagnostics | http://ns2345k.web.sigma2.no/diagnostics/noresmdiagnostics/common/NHISTfrc2_f09_tn14_20191025/ |
 
-# Simulation specifics - ensemble member nr.2
+## Simulation specifics - ensemble member nr.2
 
-## NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949) 
+### NHISTfrc2_02_f09_tn14_20200427 (1850 - 1949) 
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -79,7 +81,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_02_f09_tn14_20200427 |
 | Diagnostics | - |
 
-## NHISTfrc2_02_f09_tn14_20200519 (1950-2014)
+### NHISTfrc2_02_f09_tn14_20200519 (1950-2014)
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -95,9 +97,9 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder |/cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_02_f09_tn14_20200519 |
 | Diagnostics | - |
 
-# Simulation specifics - ensemble member nr.3
+## Simulation specifics - ensemble member nr.3
 
-## NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) 
+### NHISTfrc2_03_f09_tn14_20200519 (1850 - 1949) 
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -113,7 +115,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 | Case folder | /cluster/projects/nn2345k/adagj/NorESM/cases-cmip6/NHISTfrc2_03_f09_tn14_20200519 |
 | Diagnostics | - |
 
-## NHISTfrc2_03_f09_tn14_20200619 - (1950-2014) 
+### NHISTfrc2_03_f09_tn14_20200619 - (1950-2014) 
 |  |  |  
 | --- | :--- | 
 | CESM parent| CESM2.1.0  | 
@@ -131,7 +133,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 
 
-# AMIP
+## AMIP
 
 Atmospheric Model Intercomparison Project (AMIP) style runs are runs in which the atmosphere and land components are active while values for sea surface temperatures and sea ice are prescribed (that is, read from a file). AMIP historical simulations start with NFHIST_
 
@@ -147,19 +149,29 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
  /projects/NS9034K/CMIP6/CMIP/NCC/NorESM2-MM/amip/
 ```
 
-# Time series of NorESM2-MM historical experiments
+## Time series of NorESM2-MM historical experiments
 
-<figure>
-  <img src="images/NHISTmm.png" alt="NorESM2-MM historical simulations<" style="width:100%">
-  <figcaption><b>NorESM2-MM historical simulations</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N. The figure shows annual average (dots) and 5-year moving average (solid line).
-  </figcaption>
-</figure>
+```{figure} images/NHISTmm.png
+---
+width: 100%
+name: NHISTmm
+align: left
+---
+**NorESM2-MM historical simulations**
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST).
+**Right column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.  
+The figure shows annual average (dots) and 5-year moving average (solid line).
+```
 
-<figure>
-  <img src="images/NHISTmm_emis.png" alt="NorESM2-MM historical simulations<" style="width:100%">
-  <figcaption><b>NorESM2-MM historical simulations</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing. The figure shows annual average (dots) and 5-year moving average (solid line).
-  </figcaption>
-</figure>
+```{figure} images/NHISTmm_emis.png
+---
+width: 100%
+name: NHISTmm_emis
+align: left
+---
+**NorESM2-MM historical simulations**
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.
+**Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
+The figure shows annual average (dots) and 5-year moving average (solid line).
+```
 
