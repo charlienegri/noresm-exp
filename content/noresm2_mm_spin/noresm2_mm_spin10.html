@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data storage &#8212; NorESM Experiments</title>
+    <title>N1850OCBDRDDMS_f09_tn14_20190515 &#8212; NorESM Experiments</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Data storage" href="noresm2_mm_spin11.html" />
+    <link rel="next" title="N1850_f09_tn14_20190604" href="noresm2_mm_spin11.html" />
     <link rel="prev" title="N1850OCBDRDDMS_f09_tn14_20190512" href="noresm2_mm_spin9.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -226,17 +226,17 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Data storage
+     N1850OCBDRDDMS_f09_tn14_20190515
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="noresm2_mm_spin11.html">
-     Data storage
+     N1850_f09_tn14_20190604
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="noresm2_mm_spin12.html">
-     Data storage
+     N1850_f09_tn14_20190610
     </a>
    </li>
    <li class="toctree-l2">
@@ -363,116 +363,116 @@ const thebe_selector_output = ".output, .cell_output"
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-storage">
    Data storage
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#path-to-case-directory">
    Path to case directory
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#path-to-diagnostics">
    Path to diagnostics
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#summary-of-simulation">
    Summary of simulation
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#simulation-specifics">
    Simulation specifics
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#node-allocation">
    Node allocation
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#code-modifications-sourcemods">
    Code modifications (SourceMods)
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#correction-of-bug-in-the-second-order-in-time-term-of-the-am-correction">
      Correction of bug in the second-order in time term of the AM correction
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#removal-of-an-inconsistency-in-the-treatment-of-riverine-carbon-inputs-in-ihamocc">
      Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#increased-error-tolerance-in-energy-conservation-test-in-cice">
      Increased error tolerance in energy conservation test in CICE
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#ice-cloud-parameterisation-changes">
      Ice cloud parameterisation changes
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#increase-in-dms-emissions-high-latitudes">
      Increase in DMS emissions @ high latitudes
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#other-ihamocc-modifications">
      Other iHAMOCC modifications
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#long-wave-aod-fix">
      Long wave AOD fix
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#user-name-lists">
    User name lists
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#new-emission-files-files-in-cam6-nor-frc2">
      New emission files files in CAM6-Nor (FRC2)
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#gamma">
      gamma
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#iceopt">
      iceopt
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#user-nl-micom">
      user_nl_micom
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#user-nl-cam">
      user_nl_cam
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#user-nl-clm">
      user_nl_clm
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#time-series-of-spinup">
    Time series of spinup
   </a>
@@ -487,7 +487,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Data storage</h1>
+                <h1>N1850OCBDRDDMS_f09_tn14_20190515</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -497,116 +497,116 @@ const thebe_selector_output = ".output, .cell_output"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-storage">
    Data storage
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#path-to-case-directory">
    Path to case directory
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#path-to-diagnostics">
    Path to diagnostics
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#summary-of-simulation">
    Summary of simulation
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#simulation-specifics">
    Simulation specifics
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#node-allocation">
    Node allocation
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#code-modifications-sourcemods">
    Code modifications (SourceMods)
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#correction-of-bug-in-the-second-order-in-time-term-of-the-am-correction">
      Correction of bug in the second-order in time term of the AM correction
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#removal-of-an-inconsistency-in-the-treatment-of-riverine-carbon-inputs-in-ihamocc">
      Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#increased-error-tolerance-in-energy-conservation-test-in-cice">
      Increased error tolerance in energy conservation test in CICE
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#ice-cloud-parameterisation-changes">
      Ice cloud parameterisation changes
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#increase-in-dms-emissions-high-latitudes">
      Increase in DMS emissions @ high latitudes
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#other-ihamocc-modifications">
      Other iHAMOCC modifications
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#long-wave-aod-fix">
      Long wave AOD fix
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#user-name-lists">
    User name lists
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#new-emission-files-files-in-cam6-nor-frc2">
      New emission files files in CAM6-Nor (FRC2)
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#gamma">
      gamma
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#iceopt">
      iceopt
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#user-nl-micom">
      user_nl_micom
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#user-nl-cam">
      user_nl_cam
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#user-nl-clm">
      user_nl_clm
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#time-series-of-spinup">
    Time series of spinup
   </a>
@@ -620,22 +620,24 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="data-storage">
-<h1>Data storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="n1850ocbdrddms-f09-tn14-20190515">
+<h1>N1850OCBDRDDMS_f09_tn14_20190515<a class="headerlink" href="#n1850ocbdrddms-f09-tn14-20190515" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="data-storage">
+<h2>Data storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h2>
 <p>The data is stored on NIRD &#64; sigma2</p>
 <p>/projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_20190515</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="path-to-case-directory">
-<h1>Path to case directory<a class="headerlink" href="#path-to-case-directory" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="path-to-case-directory">
+<h2>Path to case directory<a class="headerlink" href="#path-to-case-directory" title="Permalink to this headline">¶</a></h2>
 <p>on Fram &#64; sigma2</p>
 <p>/cluster/projects/nn2345k/matsbn/NorESM/cases/N1850OCBDRDDMS_f09_tn14_20190515/</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="path-to-diagnostics">
-<h1>Path to diagnostics<a class="headerlink" href="#path-to-diagnostics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="path-to-diagnostics">
+<h2>Path to diagnostics<a class="headerlink" href="#path-to-diagnostics" title="Permalink to this headline">¶</a></h2>
 <p>http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f09_tn14_20190515/</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="summary-of-simulation">
-<h1>Summary of simulation<a class="headerlink" href="#summary-of-simulation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="summary-of-simulation">
+<h2>Summary of simulation<a class="headerlink" href="#summary-of-simulation" title="Permalink to this headline">¶</a></h2>
 <p>New in this simulation:</p>
 <ul class="simple">
 <li><p>Correction of bug in the second-order in time term of the AM correction (cd_core.F90)</p></li>
@@ -656,8 +658,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p>For all SourceMods and user name list specifics, see bottom of this page</p>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="simulation-specifics">
-<h1>Simulation specifics<a class="headerlink" href="#simulation-specifics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="simulation-specifics">
+<h2>Simulation specifics<a class="headerlink" href="#simulation-specifics" title="Permalink to this headline">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -698,8 +700,8 @@ const thebe_selector_output = ".output, .cell_output"
 </tbody>
 </table>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="node-allocation">
-<h1>Node allocation<a class="headerlink" href="#node-allocation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="node-allocation">
+<h2>Node allocation<a class="headerlink" href="#node-allocation" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="o">&lt;</span><span class="n">entry</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;NTASKS&quot;</span><span class="o">&gt;</span>
       <span class="o">&lt;</span><span class="nb">type</span><span class="o">&gt;</span><span class="n">integer</span><span class="o">&lt;/</span><span class="nb">type</span><span class="o">&gt;</span>
       <span class="o">&lt;</span><span class="n">values</span><span class="o">&gt;</span>
@@ -720,10 +722,10 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="code-modifications-sourcemods">
-<h1>Code modifications (SourceMods)<a class="headerlink" href="#code-modifications-sourcemods" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="code-modifications-sourcemods">
+<h2>Code modifications (SourceMods)<a class="headerlink" href="#code-modifications-sourcemods" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="correction-of-bug-in-the-second-order-in-time-term-of-the-am-correction">
-<h2>Correction of bug in the second-order in time term of the AM correction<a class="headerlink" href="#correction-of-bug-in-the-second-order-in-time-term-of-the-am-correction" title="Permalink to this headline">¶</a></h2>
+<h3>Correction of bug in the second-order in time term of the AM correction<a class="headerlink" href="#correction-of-bug-in-the-second-order-in-time-term-of-the-am-correction" title="Permalink to this headline">¶</a></h3>
 <p>Modification made to Lines 1337 - 1356, from</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!$omp parallel do private(i, j, k) 
             do k = kfirst, klast
@@ -787,7 +789,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="section" id="removal-of-an-inconsistency-in-the-treatment-of-riverine-carbon-inputs-in-ihamocc">
-<h2>Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC<a class="headerlink" href="#removal-of-an-inconsistency-in-the-treatment-of-riverine-carbon-inputs-in-ihamocc" title="Permalink to this headline">¶</a></h2>
+<h3>Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC<a class="headerlink" href="#removal-of-an-inconsistency-in-the-treatment-of-riverine-carbon-inputs-in-ihamocc" title="Permalink to this headline">¶</a></h3>
 <p>The code modifications helps (a bit) to reduce the ocean C-uptake (i.e. it will
 tend to reduce the current drift in ocean C)</p>
 <p>In components/micom/hamocc/mo_riverinpt.F90 ,</p>
@@ -810,7 +812,7 @@ tend to reduce the current drift in ocean C)</p>
 </div>
 </div>
 <div class="section" id="increased-error-tolerance-in-energy-conservation-test-in-cice">
-<h2>Increased error tolerance in energy conservation test in CICE<a class="headerlink" href="#increased-error-tolerance-in-energy-conservation-test-in-cice" title="Permalink to this headline">¶</a></h2>
+<h3>Increased error tolerance in energy conservation test in CICE<a class="headerlink" href="#increased-error-tolerance-in-energy-conservation-test-in-cice" title="Permalink to this headline">¶</a></h3>
 <p>ferr = energy conservation error (W m-2)</p>
 <p>Line 2390 in /components/cice/src/source/ice_therm_vertical.F90</p>
 <p>changed from</p>
@@ -825,7 +827,7 @@ tend to reduce the current drift in ocean C)</p>
 </div>
 </div>
 <div class="section" id="ice-cloud-parameterisation-changes">
-<h2>Ice cloud parameterisation changes<a class="headerlink" href="#ice-cloud-parameterisation-changes" title="Permalink to this headline">¶</a></h2>
+<h3>Ice cloud parameterisation changes<a class="headerlink" href="#ice-cloud-parameterisation-changes" title="Permalink to this headline">¶</a></h3>
 <p>in components/cam/src/physics/cam/cldfrc2m.F90</p>
 <p>Line 47 and 48 from</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>real(r8),  parameter :: qist_min     = 1.e-7_r8      ! Minimum in-stratus ice IWC constraint [ kg/kg ]
@@ -847,7 +849,7 @@ real(r8),  parameter :: qist_max     = 2.5e-4_r8     ! Maximum in-stratus ice IW
 </div>
 </div>
 <div class="section" id="increase-in-dms-emissions-high-latitudes">
-<h2>Increase in DMS emissions &#64; high latitudes<a class="headerlink" href="#increase-in-dms-emissions-high-latitudes" title="Permalink to this headline">¶</a></h2>
+<h3>Increase in DMS emissions &#64; high latitudes<a class="headerlink" href="#increase-in-dms-emissions-high-latitudes" title="Permalink to this headline">¶</a></h3>
 <p>In components/micom/hamocc/beleg_bgc.F90</p>
 <p>Line 175 changed from</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>epsher = 0.9         !dimensionless fraction -fraction of grazing egested
@@ -873,7 +875,7 @@ dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al.,
 </div>
 </div>
 <div class="section" id="other-ihamocc-modifications">
-<h2>Other iHAMOCC modifications<a class="headerlink" href="#other-ihamocc-modifications" title="Permalink to this headline">¶</a></h2>
+<h3>Other iHAMOCC modifications<a class="headerlink" href="#other-ihamocc-modifications" title="Permalink to this headline">¶</a></h3>
 <p>In components/micom/hamocc/beleg_bgc.F90</p>
 <p>Line 209 from</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>bkopal = 1.e-6    !i.e. 1.0 mmol Si/m3 
@@ -897,34 +899,34 @@ dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al.,
 </div>
 </div>
 <div class="section" id="long-wave-aod-fix">
-<h2>Long wave AOD fix<a class="headerlink" href="#long-wave-aod-fix" title="Permalink to this headline">¶</a></h2>
+<h3>Long wave AOD fix<a class="headerlink" href="#long-wave-aod-fix" title="Permalink to this headline">¶</a></h3>
 <p>Long wave aerosol optical depth (AOD) bug fixer: components/cam/src/physics/cam_oslo/optinterpol.F90</p>
 <p><strong>Information about the bug:</strong> The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.</p>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="user-name-lists">
-<h1>User name lists<a class="headerlink" href="#user-name-lists" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="user-name-lists">
+<h2>User name lists<a class="headerlink" href="#user-name-lists" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="new-emission-files-files-in-cam6-nor-frc2">
-<h2>New emission files files in CAM6-Nor (FRC2)<a class="headerlink" href="#new-emission-files-files-in-cam6-nor-frc2" title="Permalink to this headline">¶</a></h2>
+<h3>New emission files files in CAM6-Nor (FRC2)<a class="headerlink" href="#new-emission-files-files-in-cam6-nor-frc2" title="Permalink to this headline">¶</a></h3>
 <p>A new set of emission files have been made to avoid the occurence of random mid-month model crashes. These crashes are related to the reading of emission files, but are still under investigation.</p>
 <p>For list of files, please see user_nl_cam below</p>
 </div>
 <div class="section" id="gamma">
-<h2>gamma<a class="headerlink" href="#gamma" title="Permalink to this headline">¶</a></h2>
+<h3>gamma<a class="headerlink" href="#gamma" title="Permalink to this headline">¶</a></h3>
 <p><em>Gamma</em> controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.</p>
 </div>
 <div class="section" id="iceopt">
-<h2>iceopt<a class="headerlink" href="#iceopt" title="Permalink to this headline">¶</a></h2>
+<h3>iceopt<a class="headerlink" href="#iceopt" title="Permalink to this headline">¶</a></h3>
 <p>Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity.</p>
 </div>
 <div class="section" id="user-nl-micom">
-<h2>user_nl_micom<a class="headerlink" href="#user-nl-micom" title="Permalink to this headline">¶</a></h2>
+<h3>user_nl_micom<a class="headerlink" href="#user-nl-micom" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">CWMWTH</span> <span class="o">=</span> <span class="s2">&quot;      30.e3,      30.e3&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="user-nl-cam">
-<h2>user_nl_cam<a class="headerlink" href="#user-nl-cam" title="Permalink to this headline">¶</a></h2>
+<h3>user_nl_cam<a class="headerlink" href="#user-nl-cam" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>! Users should add all user specific namelist changes below in the form of
 ! namelist_var = new_namelist_value
 
@@ -989,7 +991,7 @@ dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al.,
 </div>
 </div>
 <div class="section" id="user-nl-clm">
-<h2>user_nl_clm<a class="headerlink" href="#user-nl-clm" title="Permalink to this headline">¶</a></h2>
+<h3>user_nl_clm<a class="headerlink" href="#user-nl-clm" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">finidat</span> <span class="o">=</span> <span class="s1">&#39;/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc&#39;</span>
 <span class="n">use_init_interp</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
 <span class="n">reset_snow</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
@@ -997,20 +999,15 @@ dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al.,
 </div>
 </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="time-series-of-spinup">
-<h1>Time series of spinup<a class="headerlink" href="#time-series-of-spinup" title="Permalink to this headline">¶</a></h1>
-<figure>
-  <img src="images/spinupmm_10.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
-  </figcaption>
-</figure>
-<figure>
-  <img src="images/spinupmm_emis10.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
-  </figcaption>
-</figure>
+<div class="section" id="time-series-of-spinup">
+<h2>Time series of spinup<a class="headerlink" href="#time-series-of-spinup" title="Permalink to this headline">¶</a></h2>
+<img src="images/spinupmm_10.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+<img src="images/spinupmm_emis10.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -1048,7 +1045,7 @@ dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al.,
     <a class='right-next' id="next-link" href="noresm2_mm_spin11.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data storage</p>
+        <p class="prev-next-title">N1850_f09_tn14_20190604</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
