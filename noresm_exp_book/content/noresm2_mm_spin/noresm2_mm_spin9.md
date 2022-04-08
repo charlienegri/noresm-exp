@@ -1,21 +1,22 @@
+# N1850OCBDRDDMS_f09_tn14_20190512
 
-# Data storage
+## Data storage
 The data is stored on NIRD @ sigma2
 
 /projects/NS2345K/noresm/cases/N1850OCBDRDDMS_f09_tn14_20190512
 
 
-# Path to case directory
+## Path to case directory
 
 on Fram @ sigma2
 
 /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850OCBDRDDMS_f09_tn14_20190512/
 
-# Path to diagnostics
+## Path to diagnostics
 
 http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850OCBDRDDMS_f09_tn14_20190512/
 
-# Summary of simulation
+## Summary of simulation
 
 New in this simulation: 
 - Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC (mo_riverinpt.F90)
@@ -42,7 +43,7 @@ Excluded:
 
 For all SourceMods and user name list specifics, see bottom of this page
 
-# Simulation specifics
+## Simulation specifics
 
 |  |  |  
 | --- | :--- | 
@@ -57,7 +58,7 @@ For all SourceMods and user name list specifics, see bottom of this page
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 
-# Node allocation
+## Node allocation
 
 ```
     <entry id="NTASKS">
@@ -78,9 +79,9 @@ For all SourceMods and user name list specifics, see bottom of this page
 
 
 ```
-# Code modifications (SourceMods)
+## Code modifications (SourceMods)
 
-## Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
+### Removal of an inconsistency in the treatment of riverine carbon inputs in iHAMOCC
 The code modifications helps (a bit) to reduce the ocean C-uptake (i.e. it will
 tend to reduce the current drift in ocean C)
 
@@ -108,7 +109,7 @@ ocetra(i,j,1:kmle,isco212)    = ocetra(i,j,1:kmle,isco212)    + riv_DIC2d(i,j)*f
                                                                     + riv_DIP2d(i,j)*fdt/volij 
 ```
 
-## Increased error tolerance in energy conservation test in CICE
+### Increased error tolerance in energy conservation test in CICE
 ferr = energy conservation error (W m-2)
 
 Line 2390 in /components/cice/src/source/ice_therm_vertical.F90
@@ -127,7 +128,7 @@ if (ferr > 2*ferrmax) then
 
 ```
 
-## Ice cloud parameterisation changes
+### Ice cloud parameterisation changes
 
 in components/cam/src/physics/cam/cldfrc2m.F90
 
@@ -157,7 +158,7 @@ to
 aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
 ```
 
-## Increase in DMS emissions @ high latitudes
+### Increase in DMS emissions @ high latitudes
 
 In components/micom/hamocc/beleg_bgc.F90
 
@@ -190,7 +191,7 @@ dmspar(5)=1.25*0.02          ! production with delsil, following Kloster et al.,
 ```
 
 
-## Other iHAMOCC modifications
+### Other iHAMOCC modifications
 
 In components/micom/hamocc/beleg_bgc.F90
 
@@ -222,7 +223,7 @@ to
 ```
 
 
-## Long wave AOD fix
+### Long wave AOD fix
 
 Long wave aerosol optical depth (AOD) bug fixer: components/cam/src/physics/cam_oslo/optinterpol.F90
 
@@ -231,30 +232,30 @@ Long wave aerosol optical depth (AOD) bug fixer: components/cam/src/physics/cam_
 **Information about the bug:** The aerosol long wave calculations used information from the aerosol shortwave interpolation on aerosol size. The result was that aerosol longwave forcing was not included during night. A first estimate based on estimates from AMIP simulation is + 0.03 W/m2. The forcing is not evenly distributed, but mostly focused on Sahara including downstream and the Arabian peninsula. The numbers here are around 1-2 W/m2.  
 
 
-# User name lists
+## User name lists
 
-## New emission files files in CAM6-Nor (FRC2)
+### New emission files files in CAM6-Nor (FRC2)
 
 A new set of emission files have been made to avoid the occurence of random mid-month model crashes. These crashes are related to the reading of emission files, but are still under investigation. 
 
 For list of files, please see user_nl_cam below 
 
 
-## gamma
+### gamma
 
 *Gamma* controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.
 
-## iceopt
+### iceopt
 
 Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity. 
 
 
-## user_nl_micom
+### user_nl_micom
 
 ``` 
 set CWMWTH = "      30.e3,      30.e3"
 ``` 
-## user_nl_cam
+### user_nl_cam
 ``` 
 ! Users should add all user specific namelist changes below in the form of
 ! namelist_var = new_namelist_value
@@ -318,24 +319,19 @@ set CWMWTH = "      30.e3,      30.e3"
                                                                                                                                          
 ``` 
 
-## user_nl_clm
+### user_nl_clm
 ``` 
 finidat = '/cluster/shared/noresm/inputdata/cesm2_init/b.e20.B1850.f09_g17.pi_control.all.297/0308-01-01/b.e20.B1850.f09_g17.pi_control.all.297.clm2.r.0308-01-01-00000.nc'
 use_init_interp = .true.
 reset_snow = .true.
 ``` 
-# Time series of spinup
+## Time series of spinup
 
-<figure>
-  <img src="images/spinupmm_9.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
-  </figcaption>
-</figure>
+<img src="images/spinupmm_9.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
 
-<figure>
-  <img src="images/spinupmm_emis9.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
-  </figcaption>
-</figure>
+<img src="images/spinupmm_emis9.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+
