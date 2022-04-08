@@ -120,7 +120,8 @@ Note this bug was fixed in N1850OCBDRDDMS_f19_tn14_12042019
 ## User name lists
 
 ### user_nl_cam
-``` &dyn_fv_inparm
+``` 
+&dyn_fv_inparm
  fv_am_correction= .true.
  fv_am_diag      = .true.
  fv_am_fix_lbl   = .true.

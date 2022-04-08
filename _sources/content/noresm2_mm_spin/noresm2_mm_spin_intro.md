@@ -1,6 +1,8 @@
+# NorESM2-MM spinup
+
 **Detailed information about the simulations can be found by clicking on case names in the table of contents or at the bottom of this page**
 
-# A quick overview
+## A quick overview
 
 | Case name |  branch time (y-m-d) | Simulation time (y) |   
 | :--- | :--- |   :--- | 
@@ -24,7 +26,7 @@
 |N1850_f09_tn14_20190913| 1051-01-01  | 1051 - 1199| 
 
 
-# Time series of spinup
+## Time series of spinup
 
 <figure>
   <img src="images/spinupmm.png" alt="NorESM2-MM spinup simulations" style="width:150%">
