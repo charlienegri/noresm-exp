@@ -1,21 +1,22 @@
+# N1850_f09_tn14_20190913
 
-# Data storage
+## Data storage
 The data is stored on NIRD @ sigma2
 
 /projects/NS2345K/noresm/cases/N1850_f09_tn14_20190913
 
 
-# Path to case directory
+## Path to case directory
 
 on Fram @ sigma2
 
 /cluster/projects/nn2345k/matsbn/NorESM/cases/N1850_f09_tn14_20190913/
 
-# Path to diagnostics
+## Path to diagnostics
 
 http://ns2345k.web.sigma2.no/diagnostics/noresm/common/N1850_f09_tn14_20190913/
 
-# Summary of simulation
+## Summary of simulation
 
 New in this simulation: 
 - New inital data file used in CLM5
@@ -52,7 +53,7 @@ The reset snow addition in user_nl_clm was included as default and no longer nee
 
 For all SourceMods and user name list specifics, see bottom of this page
 
-# Simulation specifics
+## Simulation specifics
 
 |  |  |  
 | --- | :--- | 
@@ -67,7 +68,7 @@ For all SourceMods and user name list specifics, see bottom of this page
 | Resolution | f09_tn14 |
 | Machine  |  Fram  |
 
-# Node allocation
+## Node allocation
 
 ```
     <entry id="NTASKS">
@@ -88,7 +89,7 @@ For all SourceMods and user name list specifics, see bottom of this page
 
 
 ```
-# Code modifications (SourceMods)
+## Code modifications (SourceMods)
 
 
 ## Ice cloud parameterisation changes
@@ -121,18 +122,18 @@ to
 aist = max(0._r8,min(1._r8,sqrt(aist*qi/qist_min)))
 ```
 
-# User name lists
+## User name lists
 
-## gamma
+### gamma
 
 *Gamma* controls the skewness of Gaussian PDF for the subgrid vertical velocities (used in the Cloud Layers Unified By Binormals (CLUBB) scheme).  A low gamma generally increases the amount of low clouds and hence gives a higher short-wave cloud forcing.
 
-## iceopt
+### iceopt
 
 Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2 default scheme for the parameterisation of the ice-cloud fraction is iceopt = 5, which includes a functional dependence of ice cloud fraction on the environmental relative humidity. 
 
 
-## user_nl_cam
+### user_nl_cam
 ``` 
 ! Users should add all user specific namelist changes below in the form of
 ! namelist_var = new_namelist_value
@@ -150,19 +151,19 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
  npr_yz         = 64,24,24,64
                                                                                                                                    
 ``` 
-## user_nl_clm
+### user_nl_clm
 ``` 
 finidat = '/cluster/shared/noresm/inputdata/lnd/clm2/initdata/I1850Clm50BgcCropSpinup_pAD_cplhist_f09_tn14.clm2.r.1051-01-01-00000.nc'
 ``` 
 
-# Time series of spinup
+## Time series of spinup
 
-<figure>
-  <img src="images/spinupmm_18.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). <b>Right column (from top to bottom):</b> Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
-  </figcaption>
-</figure>
+:::{figure-md} spinupmm_18
+<img src="images/spinupmm_18.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+:::
 
 <figure>
   <img src="images/spinupmm_emis18.png" alt="NorESM2-MM spinup simulations" style="width:120%">
