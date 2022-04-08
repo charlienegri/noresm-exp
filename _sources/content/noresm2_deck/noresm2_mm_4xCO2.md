@@ -66,7 +66,7 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 The figure shows annual average (dots) and 5-year moving average (solid line). 
 :::
 
-{figure-md} NCO2x4mm_emis
+:::{figure-md} NCO2x4mm_emis
 <img src="images/NCO2x4mm_emis.png" alt="NorESM2-MM abrupt-4xCO2  simulations<" style="width:100%">
 
 **NorESM2-MM abrupt-4xCO2  simulations**  
