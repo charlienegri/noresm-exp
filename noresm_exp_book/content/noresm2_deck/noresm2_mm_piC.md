@@ -76,20 +76,26 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 ## Time series of NorESM2-MM pre-industrial control experiments
 
+![piCmm](images/piCmm.png)
+<!--
 :::{figure-md} piCmm
 <img src="images/piCmm.png" alt="NorESM2-MM piControl simulations<" style="width:100%">
 
+-->
 **NorESM2-MM piControl simulations**  
 **Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST).  
 **Right column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.  
 The figure shows annual average (dots) and 5-year moving average (solid line).  
+<!--
 :::
 
 :::{figure-md} piCmm_emis
 <img src="images/piCmm_emis.png" alt="NorESM2-MM piControl simulations<" style="width:100%">
 
+-->
+![piCmm_emis](images/piCmm_emis.png)
 **NorESM2-MM piControl simulations**  
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  
 **Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
 The figure shows annual average (dots) and 5-year moving average (solid line). 
-:::
+<!-- ::: -->

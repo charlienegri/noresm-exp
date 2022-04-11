@@ -97,6 +97,17 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 ## Time series of NorESM2-LM abrupt quadrupling of atmospheric CO2 concentration experiments
 
+![NCO2x4lm](images/NCO2x4lm.png)
+**NorESM2-LM abrupt-4xCO2 simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.  
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+
+![NCO2x4lm_emis](images/NCO2x4lm_emis.png)
+**NorESM2-LM abrupt-4xCO2 simulations**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  **Right column (from top to bottom):**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+
+<!--
 :::{figure-md} NCO2x4lm
 <img src="images/NCO2x4lm.png" alt="NorESM2-LM abrupt-4xCO2 simulations<" style="width:100%">
 
@@ -112,3 +123,4 @@ The figure shows annual average (dots) and 5-year moving average (solid line).
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  **Right column (from top to bottom):**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
 The figure shows annual average (dots) and 5-year moving average (solid line). 
 :::
+-->

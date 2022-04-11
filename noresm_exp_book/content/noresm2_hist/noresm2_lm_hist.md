@@ -238,6 +238,18 @@ The cmorized data can be accessed on NIRD @ sigma2 under:
 
 ## Time series of NorESM2-LM historical experiments
 
+![NHISTlm](images/NHISTlm.png)
+**NorESM2-LM historical simulations**
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST).  
+**Right column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.  
+The figure shows annual average (dots) and 5-year moving average (solid line).
+
+![NHISTlm_emis](images/NHISTlm_emis.png)
+**NorESM2-LM historical simulations**
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  
+**Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
+The figure shows annual average (dots) and 5-year moving average (solid line).
+<!--
 :::{figure-md} NHISTlm
 <img src="images/NHISTlm.png" alt="NorESM2-LM historical simulations<" style="width:100%">
 
@@ -255,4 +267,4 @@ The figure shows annual average (dots) and 5-year moving average (solid line).
 **Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
 The figure shows annual average (dots) and 5-year moving average (solid line).
 :::
-
+-->
