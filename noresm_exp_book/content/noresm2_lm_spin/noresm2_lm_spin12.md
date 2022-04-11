@@ -153,9 +153,15 @@ reset_snow = .true.
 
 ## Time series of spinup
 
+![LMspinup12](images/spinup12.png)
+**NorESM2-LM spinup simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. **Right column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
+
+<!--
 :::{figure-md} spinup12
 <img src="images/spinup12.png" alt="NorESM2-LM spinup simulations" style="width:120%">
 
 **NorESM2-LM spinup simulations**  
 **Left column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Surface (2m) air temperature, Sea surface temperature (SST), global and volume averaged ocean temperature, Atlantic meridional oveturning circulation (AMOC) @ 26.5N. **Right column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, globally and annually averaged vertically-integrated total cloud cover, shortwave cloud forcing and longwave cloud forcing.
 :::
+-->

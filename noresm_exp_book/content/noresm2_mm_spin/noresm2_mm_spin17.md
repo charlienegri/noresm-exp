@@ -165,6 +165,15 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
 
 ## Time series of spinup
 
+![MMspinup17](images/spinupmm_emis17.png)
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):**  Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+
+![MMspinup17_emis](images/spinupmm_emis17.png)
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+
+<!--
 :::{figure-md} spinupmm_17
 <img src="images/spinupmm_17.png" alt="NorESM2-MM spinup simulations" style="width:120%">
 
@@ -178,3 +187,4 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
 **NorESM2-MM spinup simulation**  
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
 :::
+-->

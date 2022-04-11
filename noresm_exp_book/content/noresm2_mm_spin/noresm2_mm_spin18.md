@@ -158,6 +158,16 @@ finidat = '/cluster/shared/noresm/inputdata/lnd/clm2/initdata/I1850Clm50BgcCropS
 
 ## Time series of spinup
 
+
+![MMspinup18](images/spinupmm_18.png)
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
+
+![MMspinup18_emis](images/spinupmm_emis18.png)
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom)**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+
+<!--
 :::{figure-md} spinupmm_18
 <img src="images/spinupmm_18.png" alt="NorESM2-MM spinup simulations" style="width:120%">
 
@@ -165,9 +175,10 @@ finidat = '/cluster/shared/noresm/inputdata/lnd/clm2/initdata/I1850Clm50BgcCropS
 **Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
 :::
 
-<figure>
-  <img src="images/spinupmm_emis18.png" alt="NorESM2-MM spinup simulations" style="width:120%">
-  <figcaption><b>NorESM2-MM spinup simulation</b><br>
-    <b>Left column (from top to bottom):</b> Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions  <b>Right column (from top to bottom):</b>  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
-  </figcaption>
-</figure>
+:::{figure-md} spinupmm_18_emis
+<img src="images/spinupmm_emis18.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+
+**NorESM2-MM spinup simulation**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom)**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
+:::
+-->
