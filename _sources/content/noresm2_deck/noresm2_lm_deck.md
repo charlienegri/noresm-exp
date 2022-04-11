@@ -41,6 +41,17 @@ for AMIP details, please see NorESM2-LM historical
 
 ## Time series of NorESM2-LM DECK experiments
 
+![DECKlm](images/DECKlm.png)
+**NorESM2-LM DECK simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.   
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+
+![DECKlm_emis](images/DECKlm_emis.png)
+**NorESM2-LM DECK simulations**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
+The figure shows annual average (dots) and 5-year moving average (solid line). 
+
+<!--
 :::{figure-md} DECKlm
 <img src="images/DECKlm.png" alt="NorESM2-LM DECK simulations<" style="width:100%">
 
@@ -56,3 +67,4 @@ The figure shows annual average (dots) and 5-year moving average (solid line).
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):**  Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.  
 The figure shows annual average (dots) and 5-year moving average (solid line). 
 :::
+-->

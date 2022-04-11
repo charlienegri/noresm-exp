@@ -75,7 +75,19 @@ NorESM2 historical experiments: all-forcing simulation of the recent past; 1850 
 
 ## Time series of NorESM2-MM historical experiments
 
+![NHIST](images/NHIST.png)
+**NorESM2 historical simulations**  
+**Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST).    
+**Right column (from top to bottom):**  Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.     
+The figure shows annual average (dots) and 5-year moving average (solid line).
 
+![NHIST_emis](images/NHIST_emis.png)
+**NorESM2 historical simulations**  
+**Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  
+**Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.   
+The figure shows annual average (dots) and 5-year moving average (solid line).
+
+<!--
 :::{figure-md} NHIST
 <img src="images/NHIST.png" alt="NorESM2 historical simulations<" style="width:100%">
 
@@ -93,4 +105,4 @@ The figure shows annual average (dots) and 5-year moving average (solid line).
 **Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.   
 The figure shows annual average (dots) and 5-year moving average (solid line).
 :::
-
+-->
