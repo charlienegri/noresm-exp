@@ -43,15 +43,16 @@ for AMIP details, please see NorESM2-MM historical
 ---------------------------------------------------
 ## Time series of NorESM2-MM DECK experiments
 
-:::{figure-md} DECKmm
+![Deckmm](images/DECKmm.png)
+<!-- :::{figure-md} DECKmm
 <img src="images/DECKmm.png" alt="NorESM2-MM DECK simulations<" style="width:100%">
-
+-->
 **NorESM2-MM DECK simulations**  
 **Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST).  
 **Right column (from top to bottom):** Globally and annually averaged Net radiation @ top of model, Atlantic meridional overturning circulation (AMOC) @ 26.5N.  
 The figure shows annual average (dots) and 5-year moving average (solid line).
-:::
-
+<!--:::
+-->
 :::{figure-md} DECKmm_emis
 <img src="images/DECKmm_emis.png" alt="NorESM2-MM DECK simulations<" style="width:100%" align="left">
 
