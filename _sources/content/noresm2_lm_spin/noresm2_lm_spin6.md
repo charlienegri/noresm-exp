@@ -218,7 +218,7 @@ set CWMWTH = "      30.e3,      30.e3"
 
 ## Time series of spinup
 
-:::{figure-md}  spinup7
+:::{figure-md}  spinup6
 <img src="images/spinup6.png" alt="NorESM2-LM spinup simulations" style="width:120%">
 
 **NorESM2-LM spinup simulations**  
