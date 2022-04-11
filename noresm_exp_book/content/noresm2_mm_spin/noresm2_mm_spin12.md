@@ -158,6 +158,7 @@ Iceopt is used for setting the parameterisation of ice-cloud fraction. The CESM2
 
 :::{figure-md} spinupmm12_emis
 <img src="images/spinupmm_emis12.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+
 **NorESM2-MM spinup simulation**  
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions. **Right column (from top to bottom):** Globally and annually averaged shortwave cloud forcing and longwave cloud forcing.
 :::

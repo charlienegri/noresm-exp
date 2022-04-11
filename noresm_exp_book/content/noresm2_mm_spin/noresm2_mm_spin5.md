@@ -286,6 +286,7 @@ reset_snow = .true.
 
 :::{figure-md} spinupmm5  
 <img src="images/spinupmm_5.png" alt="NorESM2-MM spinup simulations" style="width:120%">
+
 **NorESM2-MM spinup simulation**  
 **Left column (from top to bottom):** Globally and annually averaged Surface (2m) air temperature, global and volume averaged ocean temperature, Sea surface temperature (SST). **Right column (from top to bottom):** Globally and annually  Globally and annually averaged Net radiation @ top of model, Atlantic meridional oveturning circulation (AMOC) @ 26.5N.
 :::
