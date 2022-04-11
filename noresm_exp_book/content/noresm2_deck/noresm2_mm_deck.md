@@ -53,7 +53,7 @@ The figure shows annual average (dots) and 5-year moving average (solid line).
 :::
 
 :::{figure-md} DECKmm_emis
-<img src="images/DECKmm_emis.png" alt="NorESM2-MM DECK simulations<" style="width:100%">
+<img src="images/DECKmm_emis.png" alt="NorESM2-MM DECK simulations<" style="width:100%" align="left">
 
 **NorESM2-MM DECK simulations**  
 **Left column (from top to bottom):** Globally and annually sum of Sea salt surface emissions, DMS (dimethylsulfide) surface emissions, POM (primary organic matter) surface emissions.  
