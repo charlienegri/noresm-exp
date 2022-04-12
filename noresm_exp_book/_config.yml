@@ -26,7 +26,7 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/charlienegri/noresm-exp/  # Online location of your book
+  url: https://github.com/charlien/noresm-exp/  # Online location of your book
   path_to_book: noresm_exp_book  # Optional path to your book, relative to the repository root
 #  branch: main  # Which branch of the repository should be used when creating links (optional)
 
@@ -36,6 +36,13 @@ html:
   favicon: content/images/logo/favicon.ico
   use_issues_button: true
   use_repository_button: true
+  extra_footer: |
+    <p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+    </p>
+sphinx:
+  config:
+    html_show_copyright: false
 
 
 parse:
